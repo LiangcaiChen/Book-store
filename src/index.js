@@ -4,8 +4,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
 import configureStore from './stores/storeConfigure';
+import {applyMiddleware} from 'redux';
+import ReduxPromise from 'redux-promise';
 
-const store = configureStore();
+const store = applyMiddleware(ReduxPromise)(configureStore());
 
 ReactDOM.render(
     <Provider store={store}>
