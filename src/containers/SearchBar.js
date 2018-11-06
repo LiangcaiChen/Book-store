@@ -37,8 +37,8 @@ class SearchBar extends Component {
                     <span className="input-group-btn">
                         <button type="submit" className="btn btn-secondary">Search</button>
                     </span>
-
                 </form>
+
             </div>
         )
     }
